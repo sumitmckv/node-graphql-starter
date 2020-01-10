@@ -4,13 +4,14 @@ A NodeJS starter template with NodeJS + TypeScript + Hapi + TypeORM + Postgres +
 
 ## Demo
 
-1. Visit [https://typescript-node-starter.herokuapp.com/graphql](https://typescript-node-starter.herokuapp.com/graphql) to view GraphQl Playground.
+1. Visit [https://graphql-node-starter.herokuapp.com/graphql](https://graphql-node-starter.herokuapp.com/graphql) to view GraphQl Playground.
 
 ## What currently supports?
 
 This starter kit comes with the following features:
 
 - **Apollo GraphQL**
+- **TypeGraphQL to create GraphQL schema and resolvers with TypeScript**
 - **TypeORM and Postgres**
 - **Authorization with Basic and JWT**
 - **.env files support**
