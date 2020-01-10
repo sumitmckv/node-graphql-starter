@@ -40,7 +40,7 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PW }}
           DOCKER_REGISTRY_URL: docker.pkg.github.com
         run: |
-          docker push docker.pkg.github.com/sumitmckv/node-starter/starter-image:latest
+          docker push docker.pkg.github.com/sumitmckv/node-graphql-starter/starter-image:latest
       - name: Heroku Release
         run: |
           docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
