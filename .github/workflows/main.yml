@@ -45,7 +45,7 @@ jobs:
         run: |
           docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
           docker tag docker.pkg.github.com/sumitmckv/node-graphql-starter/gql-starter-image:latest registry.heroku.com/graphql-node-starter/web
-          docker push registry.heroku.com/typescript-node-starter/web
+          docker push registry.heroku.com/graphql-node-starter/web
           heroku container:release web -a graphql-node-starter
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}

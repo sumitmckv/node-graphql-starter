@@ -3,9 +3,9 @@
   "contributors": [
     "Sumit Ghosh <sumitmckv14@gmail.com>"
   ],
-  "description": "Node starter template",
+  "description": "Node Graphql starter template",
   "license": "MIT",
-  "name": "node-starter",
+  "name": "node-graphql-starter",
   "version": "1.0.0",
   "engines": {
     "node": ">=10.0"
@@ -97,11 +97,12 @@
     "typescript": "^3.7.2"
   },
   "keywords": [
-    "api",
     "nodejs",
+    "graphql",
     "hapi",
     "typescript",
-    "swagger"
+    "type-graphql",
+    "typeorm"
   ],
   "snyk": true
 }
