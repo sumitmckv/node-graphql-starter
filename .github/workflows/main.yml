@@ -33,18 +33,18 @@ jobs:
       - name: Build Docker image
         run: |
           docker images -a
-          docker build -t docker.pkg.github.com/sumitmckv/node-graphql-starter/starter-image:latest -f ./Dockerfile .
+          docker build -t docker.pkg.github.com/sumitmckv/node-graphql-starter/gql-starter-image:latest -f ./Dockerfile .
       - name: Push Docker image
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USER }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PW }}
           DOCKER_REGISTRY_URL: docker.pkg.github.com
         run: |
-          docker push docker.pkg.github.com/sumitmckv/node-graphql-starter/starter-image:latest
+          docker push docker.pkg.github.com/sumitmckv/node-graphql-starter/gql-starter-image:latest
       - name: Heroku Release
         run: |
           docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
-          docker tag docker.pkg.github.com/sumitmckv/node-graphql-starter/starter-image:latest registry.heroku.com/graphql-node-starter/web
+          docker tag docker.pkg.github.com/sumitmckv/node-graphql-starter/gql-starter-image:latest registry.heroku.com/graphql-node-starter/web
           docker push registry.heroku.com/typescript-node-starter/web
           heroku container:release web -a graphql-node-starter
         env:
