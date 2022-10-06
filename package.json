@@ -63,7 +63,7 @@
     "hapi-auth-jwt2": "^8.8.1",
     "pg": "^7.12.1",
     "reflect-metadata": "^0.1.13",
-    "snyk": "^1.239.0",
+    "snyk": "^1.1024.0",
     "type-graphql": "^0.17.5",
     "typeorm": "^0.2.20",
     "winston": "^3.2.1"
