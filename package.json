@@ -60,7 +60,7 @@
     "apollo-server-core": "^2.9.12",
     "dotenv": "^8.2.0",
     "graphql": "^14.5.8",
-    "hapi-auth-jwt2": "^8.8.1",
+    "hapi-auth-jwt2": "^10.4.0",
     "pg": "^7.12.1",
     "reflect-metadata": "^0.1.13",
     "snyk": "^1.239.0",
